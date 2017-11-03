@@ -1,1 +1,1 @@
-ADC Breakout board for MCP3002 (MSOP packaging) and MCP601 (SOIC packaging). Vdd powers the MCP601 op amp, and Vref powers the MCP3002 ADC and provides the reference voltage. The maximum input voltage on pin IN is Vdd - 1.2V.
+ADC Breakout board for MCP3002 (MSOP packaging) and MCP601 (SOIC packaging). Vdd powers the MCP601 op amp, and Vref powers the MCP3002 ADC and provides the reference voltage. The maximum input voltage on pin IN is Vdd - 1.2V. Refer to the [MCP3002 datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/21294E.pdf) for SPI documentation.
