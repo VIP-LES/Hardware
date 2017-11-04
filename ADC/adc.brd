@@ -14,8 +14,8 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -147,7 +147,8 @@
 <wire x1="0" y1="0" x2="17.78" y2="0" width="0.1524" layer="20"/>
 <wire x1="17.78" y1="11.43" x2="0" y2="11.43" width="0.1524" layer="20"/>
 <wire x1="0" y1="11.43" x2="0" y2="0" width="0.1524" layer="20"/>
-<text x="8.128" y="8.636" size="0.4064" layer="21" font="vector" ratio="12">3002</text>
+<text x="8.89" y="8.89" size="0.4064" layer="21" font="vector" ratio="12" align="center">MCP
+3002</text>
 <text x="7.874" y="3.556" size="0.4064" layer="21" font="vector" ratio="12">MCP601</text>
 <text x="3.048" y="1.016" size="0.6096" layer="21" font="vector" ratio="12">GND</text>
 <text x="3.048" y="3.556" size="0.6096" layer="21" font="vector" ratio="12">Vdd</text>
@@ -160,6 +161,12 @@
 <wire x1="17.78" y1="11.43" x2="17.78" y2="0" width="0.1524" layer="20"/>
 <text x="12.954" y="9.906" size="1.016" layer="22" rot="MR0">lf.gatech.edu</text>
 <text x="12.446" y="0.762" size="0.4064" layer="22" rot="MR0">Designed by Matthew Pruett</text>
+<wire x1="7.5438" y1="6.1722" x2="7.5438" y2="1.4478" width="0.2032" layer="21"/>
+<wire x1="7.5438" y1="1.4478" x2="10.2362" y2="1.4478" width="0.2032" layer="21"/>
+<wire x1="10.2362" y1="1.4478" x2="10.2362" y2="6.1722" width="0.2032" layer="21"/>
+<wire x1="10.2362" y1="6.1722" x2="7.5438" y2="6.1722" width="0.2032" layer="21"/>
+<circle x="8.001" y="5.715" radius="0.179603125" width="0.0762" layer="21"/>
+<rectangle x1="7.8486" y1="5.5626" x2="8.1534" y2="5.8674" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
@@ -657,6 +664,10 @@ Please make sure your boards conform to these design rules.</description>
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
